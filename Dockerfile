@@ -8,11 +8,11 @@ FROM node:23.8.0
 #  apt-get upgrade -y && \
 #  rm -rf /var/lib/apt/lists/*
 
-COPY package.json .
+# COPY package.json .
 
-RUN npm install && npm install -g qrcode-terminal pm2
+# RUN npm install && npm install -g qrcode-terminal pm2
 
-COPY . .
+# COPY . .
 
 EXPOSE 5000
 
